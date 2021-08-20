@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#one{
+width:150px;
+}
+#two{
+width:100px;
+}
+#three{
+width:180px;
+}
+#four{
+width:60px;
+}
+#num{
+width:100px;
+}
+table{
+border:1px solid black;
+text-align:center;
+}
+#money{
+text-align:right;
+}
+caption{
+color:red;
+}
+th{
+background-color:green;
+color:white;
+border:1px solid black;
+}
+td{
+width:120px;
+border:1px solid black;
+}
+</style>
+</head>
+<body>
+<table>
+<caption>교재주문</caption>
+<tr>
+<th id="one">전공서적</th>
+<th id="two">가격</th>
+<th id="three">수량</th>
+<th id="four">합계</th>
+</tr>
+<tr>
+<td>자바프로그래밍</td>
+<td id="money">34,000원</td>
+<td><input id="num" type="number"></td>
+<td><input id="num" type="number"></td>
+</tr>
+<tr>
+<td>파이썬</td>
+<td id="money">9,500원</td>
+<td><input id="num" type="number"></td>
+<td><input id="num" type="number"></td>
+</tr>
+<tr>
+<td>이산수학</td>
+<td id="money">12,000원</td>
+<td><input id="num" type="number"></td>
+<td><input id="num" type="number"></td>
+</tr>
+<tr>
+<td>웹프로그래밍</td>
+<td id="money">50,000원</td>
+<td><input id="num" type="number"></td>
+<td><input id="num" type="number"></td>
+</tr>
+</table>
+<input type="button" value="계산">
+<input type="button" value="구매">
+<input type="button" value="초기화"><br>
+<a href="">메인페이지로 이동</a>
+</body>
+</html>

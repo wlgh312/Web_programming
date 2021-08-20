@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>
+localhost 내용:
+</title>
+</head>
+<body>
+0보다 큰 정수를 입력하세요<br>
+<input type="text" id="intIn" style="width:300"/><br>
+<br>
+<div style="float:right;">
+<input type="button" onclick="intOk()" value="확인">
+<input type="button" onclick="closeWin()" value="취소">
+</div>
+<script type="text/javascript">
+function intOk(){
+var x=document.getElementById("intIn").value;
+var data=0;
+var n=0;
+do{
+data+=++n;
+}while(n!=x);
+opener.intPrint("0에서 "+x+"까지 합은 "+data);
+}
+function closeWin(){
+window.close();
+}
+</script>
+</body>
+</html>

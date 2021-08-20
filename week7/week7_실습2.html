@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>for 문</title></head>
+<body>
+<h1>10px로 시작 각 단위별 5px씩 증가한 구구단 출력</h1>
+<script>
+var num = prompt("출력할 구구단을 입력하세요 :", 0);
+num=parseInt(num);
+var p=10;
+for(var i=1; i<10; i++){
+   document.write("<span style='font-size:"+p+"px'>");
+   document.write(num+" * "+i+"= "+num*i);
+   document.write("</span>"+"<br>");
+   p+=5;
+}
+</script>
+</body>
+</html>

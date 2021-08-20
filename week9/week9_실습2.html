@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>문제2</title>
+<script>
+function init(){
+this.name = prompt("이름을 입력하세요:");
+this.mid = parseInt(prompt("[수학] 중간성적을 입력하세요:"));
+this.fin = parseInt(prompt("[수학] 기말성적을 입력하세요:"));
+}
+function sum(){
+this.sum=this.mid+this.fin;
+return this.sum;
+}
+function avg(){
+return this.sum/2;
+}
+function score(){
+var s=this.sum/2;
+if(s>=93 & s<=97){
+return "A";
+}else if(s<=87 & s>=83){
+return "B";
+}
+else if(s<=77 & s>=73){
+return "C";
+}else if(s<=67 & s>=63){
+return "D";
+}else{
+return "F";
+}}
+var eScore=new Object();
+eScore.init=init;
+eScore.sum=sum;
+eScore.avg=avg;
+eScore.score=score;
+</script>
+</haed>
+<body>
+<script>
+eScore.init();
+document.write("성명 : "+eScore.name+"<br>");
+document.write("중간성적 : "+eScore.mid+"<br>");
+document.write("기말성적 : "+eScore.fin+"<br>");
+document.write("총점 : "+eScore.sum()+"<br>");
+document.write("평균 : "+eScore.avg()+"<br>");
+document.write(" 학점 : "+eScore.score()+"<br>");
+</script>
+</body>
+</html>

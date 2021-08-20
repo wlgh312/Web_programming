@@ -1,0 +1,19 @@
+<html>
+<body>
+<form name="myForm" method="post">
+황기태 님 점수를 입력하세요<br>
+<input type="text" id="sc" style="width:300"/><br>
+<br>
+<div style="float:right;">
+<button onclick="scoreOk()">확인</button>
+<button onclick="closeWin()">취소</button>
+</div>
+</form>
+<script>
+function scoreOk(){
+window.opener.name="parent";
+document.myform.target="parent";
+document.myForm.submit();
+</script>
+</body>
+</html>

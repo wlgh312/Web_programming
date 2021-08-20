@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<script src="http://code.jquery.com/jquery-3.1.0.js"></script>
+<script>
+$(document).ready(function () {
+var color=['red', 'green', 'blue']
+var currentcol=0
+$('div').css({backgroundColor:color[currentcol]
+}).click(function(){
+currentcol=(currentcol+1)%3
+$('div').css({backgroundColor:color[currentcol]})
+})	
+});
+</script>
+<style>
+div{
+width:100px;
+height:50px;
+line-height:50px;
+text-align:center;
+color:white;
+border-radius:10px;
+}
+</style>
+</head>
+<body>
+<div>Å¬¸¯</div>
+</body>
+</html>
